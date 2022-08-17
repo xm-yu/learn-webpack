@@ -1,0 +1,35 @@
+{
+  "compilerOptions": {
+    "baseUrl": ".",
+    // 声明文件目录，默认时node_modules/@types
+    "typeRoots": ["./src/types", "./node_modules/@types"],
+    "paths": {
+      "*": ["src/*"] // 路径映射，相对于baseUrl
+    },
+    "jsx": "react-jsx",
+    "strict": true,
+    "allowJs": true,
+    "sourceMap": true,
+    "resolveJsonModule": true,
+    "module": "esnext",
+    "target": "esnext",
+    "skipLibCheck": true,
+    "noImplicitAny": false,
+    "noUnusedLocals": true,
+    "noImplicitReturns": true,
+    "noUnusedParameters": true,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "moduleResolution": "node",
+    "experimentalDecorators": true,
+    "noFallthroughCasesInSwitch": true,
+    "allowSyntheticDefaultImports": true,
+    "strictPropertyInitialization": true,
+    "lib": ["dom", "es2015", "es2016", "es2017", "esnext"],
+    // 不输出文件,即编译后不会生成任何js文件
+    "noEmit": true,
+    "useUnknownInCatchVariables": false
+  },
+  "include": ["src"],
+  "exclude": ["./node_modules"]
+}
