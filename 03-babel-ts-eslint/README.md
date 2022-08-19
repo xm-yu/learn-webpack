@@ -8,6 +8,14 @@
 
 [ts 编译配置](https://www.51cto.com/article/694463.html)
 
+### tsconfig compiler options jsx 配置
+
+[jsx](https://www.typescriptlang.org/tsconfig/#jsx)
+
+### babel-loader
+
+[babel-loader 配置使用](https://blog.csdn.net/bingbing1128/article/details/124654852)
+
 ## 项目使用 eslint prettier stylelint 统一代码分割
 
 ## 项目 ci 类型 代码风格检查
