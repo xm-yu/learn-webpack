@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack",
+    "build": "cross-env NODE_ENV=production webpack --env lang=cn --env mode=ts --env oss_id=$(ACCESS_KEY_ID)",
     "dev": "cross-env NODE_ENV=development webpack serve"
   },
   "keywords": [],
