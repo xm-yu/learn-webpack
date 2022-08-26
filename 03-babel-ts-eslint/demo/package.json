@@ -4,12 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "cross-env NODE_ENV=production webpack --env lang=cn --env mode=ts --env oss_id=$(ACCESS_KEY_ID)",
-    "dev": "cross-env NODE_ENV=development webpack serve"
+    "type-check": "tsc --noEmit --watch",
+    "build": "cross-env NODE_ENV=production webpack",
+    "dev:babel": "cross-env NODE_ENV=development webpack serve --env use=babel-loader",
+    "dev:ts-loader": "cross-env NODE_ENV=development webpack serve --env use=ts-loader"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "browserslist": [
+    "chrome >= 30",
+    "firefox >= 30",
+    "ie >= 9",
+    "safari >= 7",
+    "ios >= 6",
+    "android >=4"
+  ],
   "dependencies": {
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
@@ -23,7 +33,9 @@
     "@types/react-dom": "^18.0.6",
     "babel-loader": "^8.2.5",
     "cross-env": "^7.0.3",
+    "fork-ts-checker-webpack-plugin": "^7.2.13",
     "html-webpack-plugin": "^5.5.0",
+    "thread-loader": "^3.0.4",
     "ts-import-plugin": "^2.0.0",
     "ts-loader": "^9.3.1",
     "typescript": "^4.7.4",

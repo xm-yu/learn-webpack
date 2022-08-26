@@ -24,6 +24,8 @@
 
 ### 导入路径不能以.tsx/ts 扩展名结尾错误
 
+[问题](https://bobbyhadz.com/blog/typescript-import-path-cannot-end-with-tsx-extension)
+
 ### 为 webpack + ts 项目中配置别名 alias
 
 [基于 baseUrl 和 paths 引入模块](https://styled.link/2020/11/28/%E5%9F%BA%E4%BA%8EbaseUrl%E5%92%8Cpaths%E5%BC%95%E5%85%A5%E6%A8%A1%E5%9D%97/)
