@@ -128,7 +128,7 @@ module.exports = ({ use = 'ts-loader' }) => {
     performance: {
       hints: false,
     },
-    devtool: IS_DEV ? 'source-map' : false,
-    // devtool: 'source-map',
+    // devtool: IS_DEV ? 'source-map' : false,
+    devtool: 'source-map',
   };
 };

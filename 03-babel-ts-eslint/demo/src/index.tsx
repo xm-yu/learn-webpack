@@ -13,7 +13,7 @@ export default function App() {
   return (
     <div>
       <button onClick={() => setCount(count + 1)}>{count}</button>
-      <button>23ddd</button>
+      <button>hello </button>
       <Index msg='1223' />
       <DemoTest />
     </div>
